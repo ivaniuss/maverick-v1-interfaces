@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "../interfaces/IPosition.sol";
-import "../interfaces/IPool.sol";
+
 interface IFactory {
     event PoolCreated(address poolAddress, uint256 fee, uint256 tickSpacing, int32 activeTick, int256 lookback, uint64 protocolFeeRatio, IERC20 tokenA, IERC20 tokenB);
     event SetFactoryProtocolFeeRatio(uint64 protocolFeeRatio);
